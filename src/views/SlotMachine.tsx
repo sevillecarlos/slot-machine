@@ -8,6 +8,8 @@ import {
 import { SLOT_MACHINE, REELS_SPINNING_TIMER } from "../config";
 //style
 import "./style/SlotMachine.css";
+//modal rules
+import ModalRules from "../components/ModalRules";
 
 //init the timer for the timer of the spinning reel
 let spinReelTimer: any = null;
@@ -27,6 +29,8 @@ const SlotMachine = () => {
   });
   const [coins, setCoins] = useState(20);
   const [rolling, setRolling] = useState(false);
+
+  const [showRules, setShowRules] = useState(false);
 
   const [spinTimer, setSpinTimer] = useState(REELS_SPINNING_TIMER);
   const [letReelSpin, setLetReelSpin] = useState({
@@ -126,6 +130,10 @@ const SlotMachine = () => {
 
   return (
     <div>
+      <ModalRules
+        showModal={showRules}
+        handleCloseModal={() => setShowRules(false)}
+      />
       <div className="slot-machine metal linear">
         <h5>🎰Slot Machine</h5>
         <div className="slot-machine-reels ">
@@ -150,9 +158,14 @@ const SlotMachine = () => {
           >
             {displaySpin && !rolling ? "" : "Spin"}
           </button>
+          <button
+            className="metal linear rules-btn"
+            onClick={() => setShowRules(true)}
+          >
+            Rules
+          </button>
         </div>
       </div>
-      <div id="slot-bottom"></div>
     </div>
   );
 };

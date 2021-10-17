@@ -102,6 +102,14 @@
   color: rgb(248, 3, 3);
 }
 
+.rules-btn{
+  height: 5.5vw !important;
+  width: 5.5vw !important;
+  font-size: 1.2vw !important;
+  float: right;
+  color: rgb(248, 211, 3) !important;
+
+}
 /* Big tablets to 1200px*/
 /* @media only screen and (max-width: 1200px) {
 } */
