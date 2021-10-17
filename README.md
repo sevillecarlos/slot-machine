@@ -1,7 +1,7 @@
 # Countries & Slot Machine
 > The most popular casino game.
 
-![Slot Machine!](/assets/images/slot-machine.png "Slot Macine")
+![Slot Machine!](/assets/images/slot-machine-image.png "Slot Macine")
 
 # Built
 ## Development Technologies
