@@ -1,4 +1,4 @@
-# Countries & Slot Machine
+# Slot Machine
 > The most popular casino game.
 
 ![Slot Machine!](/assets/images/slot-machine-image.png "Slot Macine")
