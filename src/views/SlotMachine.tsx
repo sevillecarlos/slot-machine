@@ -150,6 +150,15 @@ const SlotMachine = () => {
         <div className="slot-machine-coins-container">
           <span>{coins.toString().padStart(7, "0")}</span>
         </div>
+        <div className="slot-machine-rules-btn-container">
+          <button
+            className="metal linear rules-btn"
+            disabled={rolling}
+            onClick={() => setShowRules(true)}
+          >
+            Rules
+          </button>
+        </div>
         <div className="slot-machine-spin-btn-container">
           <button
             className="metal linear"
@@ -157,12 +166,6 @@ const SlotMachine = () => {
             onClick={spin}
           >
             {displaySpin && !rolling ? "" : "Spin"}
-          </button>
-          <button
-            className="metal linear rules-btn"
-            onClick={() => setShowRules(true)}
-          >
-            Rules
           </button>
         </div>
       </div>

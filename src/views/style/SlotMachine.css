@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Ultra&display=swap");
 
 .slot-machine {
@@ -42,7 +41,7 @@
   text-shadow: 5px 5px #000000;
   font-size: 3.4vw;
 }
-.active-reel{
+.active-reel {
   background-color: rgba(128, 128, 128, 0.226) !important;
 }
 .slot-machine-reels span {
@@ -101,14 +100,14 @@
 .slot-machine button:hover {
   color: rgb(248, 3, 3);
 }
-
-.rules-btn{
+.slot-machine-rules-btn-container{
+  text-align: right;
+}
+.rules-btn {
   height: 5.5vw !important;
   width: 5.5vw !important;
   font-size: 1.2vw !important;
-  float: right;
   color: rgb(248, 211, 3) !important;
-
 }
 /* Big tablets to 1200px*/
 /* @media only screen and (max-width: 1200px) {
@@ -146,6 +145,11 @@
     width: 20vw;
     font-size: 5vw;
   }
+  .rules-btn {
+    height: 10vw !important;
+    width: 10vw !important;
+    font-size: 2vw !important;
+  }
 }
 
 /* Small phones to small tablets: from 481 to 767*/
@@ -180,6 +184,11 @@
     width: 25vw;
     font-size: 7vw;
   }
+  .rules-btn {
+    height: 17vw !important;
+    width: 17vw !important;
+    font-size: 3.5vw !important;
+  }
 }
 
 /*Small Phone from 0 to 480px*/
@@ -213,5 +222,10 @@
     height: 30vw;
     width: 30vw;
     font-size: 7vw;
+  }
+  .rules-btn {
+    height: 17vw !important;
+    width: 17vw !important;
+    font-size: 3.5vw !important;
   }
 }
