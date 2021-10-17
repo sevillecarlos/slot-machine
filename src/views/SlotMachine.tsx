@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
-//bootstrap import
-
 //helpers&config
-import { getRandomNumber, convertFruitTextToEmoji } from "../helpers";
+import {
+  getRandomNumber,
+  convertFruitTextToEmoji,
+  slotMachineRewardRules,
+} from "../helpers";
 import { SLOT_MACHINE, REELS_SPINNING_TIMER } from "../config";
 //style
 import "./style/SlotMachine.css";
@@ -15,7 +17,6 @@ const slotMachineMap = new Map(Object.entries(SLOT_MACHINE));
 let spinningDisplayInterval: any;
 
 const SlotMachine = () => {
-
   const showSpin: any = useRef();
 
   //State
@@ -45,10 +46,10 @@ const SlotMachine = () => {
   const spinningReel = useCallback((reel: string) => {
     spinReelTimer = setTimeout(() => {
       setReels((prevState: any) => {
-        //set slot machine value for every reel with a randmon number 
+        //set slot machine value for every reel with a randmon number
         return {
           ...prevState,
-          [reel]: slotMachineMap.get(reel)?.[getRandomNumber(8, 0)],
+          [reel]: slotMachineMap.get(reel)?.[getRandomNumber(4, 0)],
         };
       });
       //spiner timer for know when to stop
@@ -91,14 +92,14 @@ const SlotMachine = () => {
     }
     if (letReelSpin.finish) {
       //when is finish send the reels value result for gain coins
-     
+      const winCoins = slotMachineRewardRules(reels);
+      setCoins((prevState: any) => prevState + winCoins);
       setRolling(false);
       setLetReelSpin((prevState: any) => {
         return { ...prevState, finish: false };
       });
     }
   }, [letReelSpin, reels, spinningReel]);
-
 
   useEffect(() => {
     //when the spinning time of a reel end, pass to the another reel
