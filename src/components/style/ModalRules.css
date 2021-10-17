@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Ultra&display=swap");
+
+.rules-modal {
+  font-family: "Ultra", serif !important;
+}
+.rules-heading {
+  color: yellow;
+  margin: auto;
+
+  border: none !important;
+}
+.rules-heading-title {
+  font-size: 250% !important;
+  text-shadow: 5px 5px #000000;
+}
+.back-drop-modal {
+  background-color: transparent !important;
+}
+.rules-modal {
+  background-color: rgba(255, 255, 255, 0.932) !important;
+  border-radius: 15px !important;
+  box-shadow: inset hsla(0, 0%, 15%, 1) 0 0px 0px 4px,
+    inset hsla(0, 0%, 15%, 0.8) 0 -1px 5px 4px,
+    inset hsla(0, 0%, 0%, 0.25) 0 -1px 0px 7px,
+    inset hsla(0, 0%, 100%, 0.7) 0 2px 1px 7px,
+    hsla(0, 0%, 0%, 0.15) 0 -5px 6px 4px, hsla(0, 0%, 100%, 0.5) 0 5px 6px 4px;
+}
+
+.rules-table {
+  list-style: none !important;
+  font-size: 230% !important;
+  text-shadow: 4px 4px #000000;
+  color: rgb(255, 174, 0) !important;
+  letter-spacing: 2px;
+}
