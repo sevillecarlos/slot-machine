@@ -1,21 +1,21 @@
 # Countries & Slot Machine
-> Is an app of two section
-> **Countries**: You can filter, search a specific country or a list
-> **Slot Machine**: The popular game of the casino.
+> The most popular casino game.
+
+![Slot Machine!](/assets/images/slot-machine.png "Slot Macine")
 
 # Built
 ## Development Technologies
 ![](https://img.shields.io/badge/Front--End-React-blue)
 ![](https://img.shields.io/badge/Programming--Language-TypeScript-blue)
-![](https://img.shields.io/badge/Library-Redux-purple)
+
 ## Libraries
 ![](https://img.shields.io/badge/Library-Bootstrap--React-purple)
 # Live Demo
-Try it! [Countries & Slot Machine](https://countries-slot-machine.netlify.app/)
+Try it! [Slot Machine](https://slot-machine-app.netlify.app/)
 
 # Getting Start
 ```
-git clone https://github.com/sevillecarlos/countries-slot-machine.git
+git clone https://github.com/sevillecarlos/slot-machine.git
 ```
 ### or Download the zip.
 ## Project setup
@@ -26,13 +26,6 @@ npm install
 ```
 npm start
 ```
-### Create your .env file for the environment variables
-#### Server URL of the app
-* *REACT_APP_SERVER_URL*
-
-## Commerc-e Server
-Navigate to [Countries and Slot Machine Server](https://github.com/sevillecarlos/countries-slot-machine-server) to found the server for the app.
-
 
 # Author
 ## Carlos Alberto Sevilla Fernandez
