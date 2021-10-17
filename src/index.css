@@ -1,10 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 body {
   margin: 0;
-  background-color: whitesmoke!important;
   font-family: "Source Code Pro", monospace !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 33%,
+    rgba(207, 207, 207, 1) 70%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 33%,
+    rgba(207, 207, 207, 1) 70%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 33%,
+    rgba(207, 207, 207, 1) 70%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#cfcfcf",GradientType=1);
 }
 
 code {
